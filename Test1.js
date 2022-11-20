@@ -18,8 +18,9 @@ laterYears*= 4;
 //test to see if the result is correct for the conversions
 console.log(earlyYears);
 console.log(laterYears);
+// sum of dog years conversions
 var myAgeInDogYears= earlyYears + laterYears;
-//
+// declared var my name
 var myName= 'Alessio'.toLowerCase();
-//
+//final console.log shows the final result
 console.log('My name is ' + myName + '. I am ' + myAge + ' years which is ' + myAgeInDogYears + ' years old in dog years.');
