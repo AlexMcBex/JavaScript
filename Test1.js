@@ -64,7 +64,7 @@ let isCorrect = true;
 isCorrect 
   ? console.log("Correct!") 
   : console.log("Incorrect!");
-
+// other example of shortened syntaxis
 let favoritePhrase = "Love That!";
 favoritePhrase === "Love That!"
   ? console.log("I love that!")
