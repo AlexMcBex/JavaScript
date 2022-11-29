@@ -71,3 +71,8 @@ favoritePhrase === "Love That!"
   : console.log("I don't love that!");
 //update
 
+
+const characters = ["Garnet", "Amethyst", "Pearl", "Steven"];
+for (let i = 0 ; i < characters.length; i++){ //keeps adding 1 to "i" starting from 0 and stopping when it reaches 4
+    console.log(characters[i]) //displays all characters one by one, in the order of "i" number var
+}
