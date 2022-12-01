@@ -40,12 +40,6 @@ if (favoritePhrase) {
   console.log('This string is definitely empty.');
 }
 
-let tool = '';
-// since tool is an empty string in declaring the variable writingUtensil, tool is false, so with the ||or condition the string 'pen' declares the variant
-let writingUtensil = tool || 'pen';
-// unless a string value is set in the variant tool defining writingUtensil, console.log() will print 'pen'
-console.log(`The ${writingUtensil} is mightier than the sword.`);
-
 let isLocked = false;
 
 isLocked
