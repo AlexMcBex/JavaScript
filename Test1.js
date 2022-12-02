@@ -76,3 +76,74 @@ const characters = ["Garnet", "Amethyst", "Pearl", "Steven"];
 for (let i = 0 ; i < characters.length; i++){ //keeps adding 1 to "i" starting from 0 and stopping when it reaches 4
     console.log(characters[i]) //displays all characters one by one, in the order of "i" number var
 }
+
+//3 choices
+let choices = ["Paper", "Scissor", "Rock"];
+//player and computer picked choices
+const player = {
+  choice: 0
+}
+const computer = {
+  choice: 0
+}
+
+//change [] to choose
+player.choice = choices[1];
+
+//Choice of the computer
+function computerChoice(){
+  // random number 
+  const randomNum = Math.floor(Math.random() * choices.length);
+  computer.choice = choices[randomNum];
+}
+
+//function: invoke computer choice function and compare the coiches
+function compareChoices(){
+  computerChoice();
+  //Player chooses Paper
+if (player.choice === choices[0]) {
+  if (computer.choice === choices[1]) {
+      displayResult("The player chose " + choices[0] + ", the computer chose " + choices[1] + ". Computer wins!");
+  } else {
+      cdisplayResult("The player chose " + choices[0] + ", the computer chose " + choices[2] + ". Player wins!");
+  }
+}
+//Player chooses Scissor
+if (player.choice === choices[1]) {
+  if (computer.choice === choices[2]) {
+      displayResult("The player chose " + choices[0] + ", the computer chose " + choices[2] + ". Computer wins!");
+  } else {
+      displayResult("The player chose " + choices[1] + ", the computer chose " + choices[0] + ". Player wins!");
+  } 
+}
+//Player chooses Rock
+if (player.choice === choices[2]) {
+  if (computer.choice === choices[0]) {
+      displayResult("The player chose " + choices[2] + ", the computer chose " + choices[0] + ". Computer wins!");
+  } else {
+      displayResult("The player chose " + choices[2] + ", the computer chose " + choices[1] + ". Player wins!");
+  }
+}
+//PLayer and computer choose the same
+if (player.choice === computer.choice) {
+  displayResult("The player and the computer both chose " + player.choice + ", it's a tie!")
+}
+  function displayResult(result){
+    const resultText = document.createElement('p');
+    resultText.innerText = result;
+    document.body.appendChild(resultText);
+    
+  }
+}
+//invoke the function
+  compareChoices();
+
+
+
+
+
+
+
+
+
+
