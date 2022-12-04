@@ -1,5 +1,5 @@
 //3 choices
-let choices = ["Paper", "Scissor", "Rock"];
+let choices = ["Papyrus", "Lapis", "Scalpellus"];
 //player and computer picked choices
 const player = {
   choice: 0
@@ -19,7 +19,7 @@ const computer = {
 //function: invoke computer choice function and compare the coiches
 function compareChoices(){
   computerChoice();
-  //Player chooses Paper
+  //Player chooses Papyrus
 if (player.choice === choices[0]) {
   if (computer.choice === choices[1]) {
       displayResult("The player chose " + choices[0] + ", the computer chose " + choices[1] + ". Computer wins!");
@@ -27,15 +27,15 @@ if (player.choice === choices[0]) {
       displayResult("The player chose " + choices[0] + ", the computer chose " + choices[2] + ". Player wins!");
   }
 }
-//Player chooses Scissor
+//Player chooses Lapis
 if (player.choice === choices[1]) {
   if (computer.choice === choices[2]) {
-      displayResult("The player chose " + choices[0] + ", the computer chose " + choices[2] + ". Computer wins!");
+      displayResult("The player chose " + choices[1] + ", the computer chose " + choices[2] + ". Computer wins!");
   } else {
       displayResult("The player chose " + choices[1] + ", the computer chose " + choices[0] + ". Player wins!");
   } 
 }
-//Player chooses Rock
+//Player chooses Scalpellus
 if (player.choice === choices[2]) {
   if (computer.choice === choices[0]) {
       displayResult("The player chose " + choices[2] + ", the computer chose " + choices[0] + ". Computer wins!");
@@ -48,47 +48,31 @@ if (player.choice === computer.choice) {
   displayResult("The player and the computer both chose " + player.choice + ", it's a tie!")
 }
   function displayResult(result){
-    const resultText = document.createElement('p');
-    resultText.innerText = result;
-    document.body.appendChild(resultText);  
+    const resultText = result;
+    document.getElementById("display-result").innerText = resultText;  
   }
 }
 
-
-//the user clicks on PAPER button
-function selectPaper(){
+//the user clicks on PAPYRUS button
+function selectPapyrus(){
   player.choice = choices[0];
   //invoke the function
   compareChoices()
 }
-document.getElementById("Paper").addEventListener('click', selectPaper);
+document.getElementById("Papyrus").addEventListener('click', selectPapyrus);
 
-//the user clicks on Scissor button
-function selectScissor(){
+//the user clicks on LAPIS button
+function selectLapis(){
   player.choice = choices[1];
   //invoke the function
   compareChoices();
 }
-document.getElementById("Scissor").addEventListener('click', selectScissor);
+document.getElementById("Lapis").addEventListener('click', selectLapis);
 
-//the user clicks on Rock button
-function selectRock(){
+//the user clicks on SCALPELLUS button
+function selectScalpellus(){
   player.choice = choices[2];
   //invoke the function
   compareChoices();
 }
-document.getElementById("Rock").addEventListener('click', selectRock);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+document.getElementById("Scalpellus").addEventListener('click', selectScalpellus);

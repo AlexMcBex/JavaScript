@@ -297,7 +297,7 @@ for (let year = 1; year < 11; year++) { //we count 10 years
     }else{
         investment = investment * 1.10; //every other year we increase 10%
     }
-    console.log("Years: " + year + " Value: " + investment );
+    console. log("Years: " + year + " Value: " + investment );
 }
 /* we display:
 Years: 1 Value: 1100
