@@ -12,10 +12,10 @@ console.log(100 % 99)    //remainder: what remains of the division (con il resto
 console.log('Hello' + 'World')   // same as the numbers also strings can be concatenated, console.log() will display in this case HelloWorld since there's no space
 console.log('Hello' + ' ' + 'World')     //display: Hello World
 
-console.log('how to code' .length)   //.length is a property, console.log() willl show the number of characters of the string in this case 11
+console.log('how to code' .length)   //.length is a property, console.log() will show the number of characters of the string in this case 11
 
 console.log('Codecademy' .toUpperCase());   //.toUpperCase() is a method, its specific function is to display the string Uppercase: CODECADEMY
-console.log('    Remove whitespace   '.trim());     //.trim() removes the space at the begginning and the end of the display of the string
+console.log('    Remove whitespace   '.trim());     //.trim() removes the space at the beginning and the end of the display of the string
 
 console.log(Math.floor(Math.random() * 50));    //this code displays a random number between 0 and 50. 
 // the function Math.random() picks a random decimal number between 0 and 1. This is multiplied* by 50. The result is returned to the lower or same integer number.
@@ -25,7 +25,7 @@ var numOfSlices = 8;
 console.log(favoriteFood);  // console.log displays the value, in this case 'pizza'
 console.log(numOfSlices);
 
-let changeMe = true;    //defines the let variable changeMe as boolean true, a bolean can be only true (ON) or false (OFF) , it's written wihout quote marks
+let changeMe = true;    //defines the let variable changeMe as boolean true, a boolean can be only true (ON) or false (OFF) , it's written wihout quote marks
 changeMe = false;   // let variables can be changed after being defined, in this line we switch it from true to false
 console.log(changeMe)   //displays the changeMe let variable, in the most updated line it happens to be false
 
@@ -137,7 +137,7 @@ let tirednessLevel = 6;
   } else {
     console.log('not bed time yet');
   }
-  // ! is the NOT element. the if statement activates only if the condition in the ! element doesn't occour. since tirednessLevel>8 is false the if activates
+  // ! is the NOT element. the if statement activates only if the condition in the ! element doesn't occur. since tirednessLevel>8 is false the if activates
   if (!(tirednessLevel > 8)) {
     console.log('time to sleep');
   } else {
@@ -178,7 +178,7 @@ if (isLocked) {
 } else {
     console.log("You will not need a key to open the door.");
 }
-    it shorts the syntaxis for the code.
+    it shorts the syntax for the code.
 */
 let isCorrect = true;
 isCorrect 
@@ -270,7 +270,7 @@ if (temperature < 60) {
 }
  
 // Basic for Loop, it continues to execute until a certain condition is met
-for (let i = 0; i < 100; i++) { //count every number from 0 up to 99, starting from the first statement we repeaat the third until the second is false and the loop stops
+for (let i = 0; i < 100; i++) { //count every number from 0 up to 99, starting from the first statement we repeat the third until the second is false and the loop stops
   console.log(i);
 }
 
@@ -319,12 +319,4 @@ while (daysUntilTheFinale > 0) { //loop goes until the value is not more than 0
 }
 console.log("It's finally here!"); //once the while statement is false this goes
 
-//FUNCTIONS
-
-
-
-
-
-
-
-
+//FUNCTIO
