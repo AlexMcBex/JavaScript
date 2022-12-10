@@ -29,7 +29,7 @@ let changeMe = true;    //defines the let variable changeMe as boolean true, a b
 changeMe = false;   // let variables can be changed after being defined, in this line we switch it from true to false
 console.log(changeMe)   //displays the changeMe let variable, in the most updated line it happens to be false
 
-const myName = 'Gilberto';  // constants once defined can't be changed, trying to do so will result in an error message
+const myName = "Gilberto";  // constants once defined can't be changed, trying to do so will result in an error message
 console.log(myName);     //displays the constant value
 
 let levelUp = 10;
@@ -319,4 +319,4 @@ while (daysUntilTheFinale > 0) { //loop goes until the value is not more than 0
 }
 console.log("It's finally here!"); //once the while statement is false this goes
 
-//FUNCTIO
+//FUNCTION
